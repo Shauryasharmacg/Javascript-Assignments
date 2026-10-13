@@ -366,3 +366,206 @@ Ans. TRUE
 Ans.TRUE
     TRUE
     FALSE
+// 7.Greater Than or Equal To >=
+  1.Minimum marks required for distinction is 75. A student scored 75. Check if the student gets distinction.
+  Ans.let minmarks=75
+      let scored=75
+      console.log(minmarks>= scored)
+      TRUE
+   2.Ticket price is ₹300. A person has ₹300. Check if they can buy the ticket.
+  Ans.let ticketprice=300
+      let personhas=300
+      console.log(ticketprice>=personhas)
+      TRUE
+  3.Predict the output:
+    console.log(25 >= 25);
+    console.log(30 >= 25);
+    console.log(20 >= 25);
+  Ans.TRUE
+      TRUE
+      FALSE
+  4.Predict the output:
+    console.log("25" >= 25);
+    console.log("10" >= "2");
+    console.log(null >= 0);
+  Ans. TRUE
+       FALSE
+       TRUE
+  5.What is the result of undefined >= 0? Explain.
+    Ans.FALSE
+  6.A lift can carry maximum 8 people. Currently 8 people are inside. Write a condition using >= to check if the lift is full or overloaded.
+    let max=8
+    let inside=8
+    console.log(max>=inside)
+    TRUE
+  7.Predict and explain:
+    console.log(true >= 1);
+    console.log("" >= 0);
+    console.log(NaN >= NaN);
+  Ans.TRUE
+      TRUE
+      FALSE
+// 8.GREATER THAN OR EQUAL TO <=
+  1.Maximum speed limit is 60 km/h. A vehicle is travelling at 60 km/h. Check if it is within the limit.
+    Ans. let maxspeed=60
+         let carspeed=60
+         console.log(carspeed<=maxspeed)
+         TRUE
+  2.A student needs at least 40 marks to pass. He scored 39. Check if he has failed.
+    Ans.let lestmarks=40;
+        let scoredmarks=39;
+      console.log(scoremarks<=leastmarks);
+        TRUE
+  3.Predict the output:
+    console.log(15 <= 20);
+    console.log(20 <= 15);
+    console.log(15 <= 15);
+  Ans.TRUE
+      FALSE
+      TRUE
+  4.Predict the output:
+    console.log("15" <= 20);
+    console.log("30" <= "5");
+    console.log(null <= 0);
+  Ans.TRUE
+      TRUE
+      TRUE
+  5.What is the result of undefined <= 0? Explain.
+    Ans. FALSE
+  6.A bag can hold maximum 10 books. Currently it has 10 books. Write a condition using <= to check if more books can be added.
+    Ans. let baghold=10;
+         let currentlyhold=10;
+         console.log(currentlyhold<=baghold)
+  7.Predict and explain:
+    console.log(false <= 0);
+    console.log("" <= 0);
+    console.log(NaN <= 5);
+  Ans.TRUE
+      TRUE
+      FALSE
+// 9. MIXED PRACTICE(>,<,>+,<=)
+  1.Write expressions to check:
+    1.Whether age 18 is greater than or equal to voting age 18.
+      Ans.console.log(18>=18)
+    2.Whether temperature 32 is less than 35.
+      Ans.console.log(35>=32)
+    3.Whether score 90 is greater than 85.
+      Ans.console.log(90>=85)
+  2.Predict the outputs:
+    console.log(10 > 5 && 5 < 10);
+    console.log("10" >= 10);
+    console.log(null <= undefined);
+    console.log("5" < "10" && 5 > 2);
+      Ans.TRUE
+          TRUE
+          FALSE
+          FALSE
+  3.A product costs ₹499. A customer has ₹500. Write conditions using >= and < to decide if the customer can buy it and if any change will be left.
+    Ans.let originalcost=499
+        let customerhas=500
+        console.log(customerhas>=originalcost)
+        TRUE
+  4.Explain why "10" > "2" is false but 10 > 2 is true.
+    Ans. "10">"2"=>Because thease are in string it was calculated by ASCII value.
+          10>2=>Because they calculated by the number.
+
+// Part E]: Increment / Decrement Operators (++ / --)
+    PartA:
+        1. Counter starts at 5, increment by 1
+            Ans.let counter = 5;
+                counter++;
+                console.log("Counter:", counter);
+                Counter:6
+        
+        2. Player has 3 lives, decrement by 1
+            Ans.let lives = 3;
+                lives--;
+                console.log("Lives:", lives);
+                Lives:2
+        
+        3. Score = 10, increase using ++
+            Ans.let score = 10;
+                score++;
+                console.log("Score:", score);
+                Scores:11
+        
+        4. Items = 8, decrease using --
+            Ans.let items = 8;
+              items--;
+              console.log("Items:", items);
+              Items:7
+        
+        5. Count = 0, increment twice
+            Ans.let count = 0;
+                count++;
+                count++;
+                console.log("Final Count:", count);
+                Final Count:2
+    Part B:
+        6.Start with x = 5.
+          Create y = x++
+          Print both x and y.
+          Explain why the values are different.
+            Ans.let x = 5;
+                let y = x++;
+                console.log("x:", x); // 6
+                console.log("y:", y); // 5
+        7.Start with a = 5.
+          Create b = ++a
+          Print both a and b.
+          Explain the difference from the previous question.
+            Ans.let a = 5;
+                let b = ++a;
+                console.log("a:", a); // 6
+                console.log("b:", b); // 6
+        8.Start with lives = 3.
+          Use post-decrement (lives--) and store the result in previousLives.
+          Print both variables.
+            Ans.let lives = 3;
+                let previousLives = lives--;
+                console.log("lives:", lives);                 // 2
+                console.log("previousLives:", previousLives); // 3
+       9.Start with attempts = 0.
+         Use pre-increment (++attempts) and store the result in currentAttempts.
+         Print both variables.
+           Ans.let attempts = 0;
+                let currentAttempts = ++attempts;
+                console.log("attempts:", attempts);               // 1
+                console.log("currentAttempts:", currentAttempts); // 1
+       10.Start with points = 100.
+          Increase it using ++
+          Then decrease it using --
+          Print the final value.
+            Ans.let points = 100;
+                ++points; // points becomes 101
+                --points; // points becomes 100
+                console.log("final points:", points); // 100
+   Part C:
+      11.Predict the output:
+         let x = 10;
+         let y = x++;
+         let z = ++x;
+         console.log(x, y, z);
+          Ans.12,10,12
+      12.Predict the output:
+         let a = 5;
+         let b = a-- + ++a;
+         console.log(a, b);
+          Ans.5,10
+
+      13.Predict the output:
+         let m = 7;
+         let n = --m + m++;
+         console.log(m, n);
+          Ans.7,12
+         
+      14.Predict the output:
+         let p = 3;
+         let q = p++ + ++p + p;
+         console.log(p, q);
+          Ans.5,13
+      15.Predict the output:
+         let val = 0;
+         val = val++ + ++val;
+         console.log(val);
+          Ans.2
